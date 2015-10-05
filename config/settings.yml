@@ -1,0 +1,4 @@
+plugins:
+  pages_enabled:
+    default: true
+    client: true
