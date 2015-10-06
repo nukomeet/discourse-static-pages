@@ -1,0 +1,20 @@
+<form>
+  <div class="form-group">
+    <label class="control-label col-lg-2" for="inputTitle">Title</label>
+    <div class="col-lg-10">
+    {{input type="text" value=model.title id="inputTitle" classNames="form-control"}}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-lg-2" for="textareaBody">Body</label>
+    <div class="col-lg-10">
+    {{textarea value=model.body classNames="form-control" id="textareaBody"}}
+    </div>
+  </div>
+  <input type="hidden" {{bind-attr value=model.id}} id="id"/>
+</form>
+
+<div class="btn-group">
+  <button class="btn btn-large btn-primary" {{action 'create' this}}>Create</button>
+  <button class="btn btn-large btn-danger" {{action 'cancel' this}}>Cancel</button>
+</div>

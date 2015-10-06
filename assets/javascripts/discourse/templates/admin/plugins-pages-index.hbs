@@ -1,0 +1,31 @@
+<div class="row">
+  <table>
+    <thead>
+      <tr>
+        <th>Page</th>
+        <th>Created</th>
+        <th>Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each page in model}}
+        <tr>
+          <td>
+            {{page.title}}
+          </td>
+          <td>
+            {{page.created_at}}
+          </td>
+          <td>
+            {{page.updated_at}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
+
+<div class="row">
+  {{#link-to 'adminPlugins.pages.new'}}New{{/link-to}}
+  {{d-button action="refresh" icon="refresh" class="btn-primary" label="pages.refresh" disabled=performingAction}}
+</div>
