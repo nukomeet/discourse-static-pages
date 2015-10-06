@@ -12,6 +12,23 @@ module Pages
       render_json_dump(page: page)
     end
 
+    def show
+      page = Page.find(params[:id])
+      render_json_dump(page: page)
+    end
+
+    def update
+      page = Page.find(params[:id])
+      page.update_attributes!(page_params)
+      render_json_dump(page: page)
+    end
+
+    def destroy
+      page = Page.find(params[:id])
+      page.delete
+      render nothing: true, status: 204
+    end
+
     private
 
     def page_params

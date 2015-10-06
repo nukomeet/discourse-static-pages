@@ -10,6 +10,7 @@ add_admin_route 'pages.title', 'pages'
 Discourse::Application.routes.append do
   get '/admin/plugins/pages' => 'admin/plugins#index', constraints: AdminConstraint.new
   get '/admin/plugins/pages/new' => 'admin/plugins#index', constraints: AdminConstraint.new
+  get '/admin/plugins/pages/:id/edit' => 'admin/plugins#index', constraints: AdminConstraint.new
 end
 
 load File.expand_path('../lib/pages.rb', __FILE__)

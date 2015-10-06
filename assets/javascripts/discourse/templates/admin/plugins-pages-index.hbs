@@ -2,9 +2,10 @@
   <table>
     <thead>
       <tr>
-        <th>Page</th>
-        <th>Created</th>
-        <th>Updated</th>
+        <th>{{i18n 'pages.page'}}</th>
+        <th>{{i18n 'pages.created'}}</th>
+        <th>{{i18n 'pages.updated'}}</th>
+        <th>{{i18n 'pages.actions'}}</th>
       </tr>
     </thead>
     <tbody>
@@ -19,6 +20,10 @@
           <td>
             {{page.updated_at}}
           </td>
+          <td>
+            {{#link-to 'adminPlugins.pages.edit' page.id class="btn btn-primary"}}{{i18n 'pages.edit'}}{{/link-to}}
+            <button class="btn" {{action 'delete' page}}>{{i18n 'pages.delete'}}</button>
+          </td>
         </tr>
       {{/each}}
     </tbody>
@@ -26,6 +31,6 @@
 </div>
 
 <div class="row">
-  {{#link-to 'adminPlugins.pages.new'}}New{{/link-to}}
-  {{d-button action="refresh" icon="refresh" class="btn-primary" label="pages.refresh" disabled=performingAction}}
+  {{#link-to 'adminPlugins.pages.new' class="btn btn-primary"}}{{i18n 'pages.new'}}{{/link-to}}
+  <button class="btn" {{action 'refresh'}}>{{i18n 'pages.refresh'}}</button>
 </div>

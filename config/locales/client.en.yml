@@ -3,3 +3,13 @@ en:
     pages:
       title: 'Pages'
       refresh: 'Refresh'
+      new: 'New'
+      edit: 'Edit'
+      create: 'Create'
+      update: 'Update'
+      delete: 'Delete'
+      cancel: 'Cancel'
+      page: 'Page'
+      created: 'Created'
+      updated: 'Updated'
+      actions: 'Actions'
