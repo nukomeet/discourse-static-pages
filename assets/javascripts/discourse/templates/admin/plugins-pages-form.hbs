@@ -1,15 +1,17 @@
-<form>
-  <div class="form-group">
-    <label class="control-label col-lg-2" for="inputTitle">{{i18n 'static_pages.title'}}</label>
-    <div class="col-lg-10">
-    {{input type="text" value=model.title id="inputTitle" classNames="form-control"}}
-    </div>
+<div class="form-group">
+  <label class="control-label col-lg-2" for="title">
+    {{i18n 'static_pages.title'}}
+  </label>
+  <div class="col-lg-10">
+    {{input type="text" name="title" value=model.title id="title" classNames="form-control" required="true"}}
   </div>
-  <div class="form-group">
-    <label class="control-label col-lg-2" for="textareaBody">{{i18n 'static_pages.body'}}</label>
-    <div class="col-lg-10">
-    {{textarea value=model.body classNames="form-control" id="textareaBody"}}
-    </div>
+</div>
+<div class="form-group">
+  <label class="control-label col-lg-2" for="body">
+    {{i18n 'static_pages.body'}}
+  </label>
+  <div class="col-lg-10">
+    {{textarea name="body" value=model.body id="body" classNames="form-control" required="true"}}
   </div>
-  <input type="hidden" {{bind-attr value=model.id}} id="id"/>
-</form>
+</div>
+<input type="hidden" name="id" {{bind-attr value=model.id}} id="id" />

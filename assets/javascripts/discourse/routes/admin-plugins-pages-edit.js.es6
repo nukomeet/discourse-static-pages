@@ -2,8 +2,10 @@ import Page from '../../admin/models/page';
 
 export default Discourse.Route.extend({
   actions: {
-    update(model) {
-      Page.update(model).then(() => {
+    update() {
+      const { id, title, body } = this.controller.model;
+
+      Page.update({ id, title, body }).then(() => {
         this.transitionTo('adminPlugins.pages.index');
       });
     },

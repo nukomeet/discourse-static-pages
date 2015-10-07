@@ -15,6 +15,5 @@ git clone https://github.com/nukomeet/discourse-static-pages.git
 
 ## TODO
 
-* form validation
 * error handling
 * enable/disable frontend based on setting
