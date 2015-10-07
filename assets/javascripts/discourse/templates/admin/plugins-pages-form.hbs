@@ -3,7 +3,7 @@
     {{i18n 'static_pages.title'}}
   </label>
   <div class="col-lg-10">
-    {{input type="text" name="title" value=model.title id="title" classNames="form-control" required="true"}}
+    {{input type="text" name="title" value=model.title required="true"}}
   </div>
 </div>
 <div class="form-group">
@@ -11,7 +11,7 @@
     {{i18n 'static_pages.body'}}
   </label>
   <div class="col-lg-10">
-    {{textarea name="body" value=model.body id="body" classNames="form-control" required="true"}}
+    {{pagedown-editor name="body" value=model.body required="true"}}
   </div>
 </div>
 <input type="hidden" name="id" {{bind-attr value=model.id}} id="id" />

@@ -4,8 +4,8 @@
 # authors: Nukomeet
 
 enabled_site_setting :static_pages_enabled
-
 add_admin_route 'static_pages.pages', 'pages'
+register_asset 'stylesheets/static_pages.scss'
 
 Discourse::Application.routes.append do
   get '/admin/plugins/pages' => 'admin/plugins#index', constraints: AdminConstraint.new

@@ -1,6 +1,8 @@
 <form {{action 'create' on="submit"}}>
   {{partial 'admin/plugins-pages-form'}}
 
+  <hr>
+
   <div class="btn-group">
     <input type="submit" class="btn btn-large btn-primary" value="{{i18n 'static_pages.create'}}" />
     <button class="btn btn-large btn-danger" {{action 'cancel' this}}>
