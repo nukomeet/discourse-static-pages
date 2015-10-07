@@ -15,5 +15,4 @@ git clone https://github.com/nukomeet/discourse-static-pages.git
 
 ## TODO
 
-* error handling
 * enable/disable frontend based on setting

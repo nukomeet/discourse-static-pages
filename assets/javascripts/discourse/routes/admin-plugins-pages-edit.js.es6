@@ -5,9 +5,13 @@ export default Discourse.Route.extend({
     update() {
       const { id, title, body } = this.controller.model;
 
-      Page.update({ id, title, body }).then(() => {
-        this.transitionTo('adminPlugins.pages.index');
-      });
+      Page.update({ id, title, body })
+        .then(() => {
+          this.transitionTo('adminPlugins.pages.index');
+        })
+        .catch(() => {
+          alert('Error updating page.');
+        });
     },
 
     cancel() {
