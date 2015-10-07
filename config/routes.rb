@@ -1,4 +1,4 @@
-Pages::Engine.routes.draw do
+StaticPages::Engine.routes.draw do
 
   # TODO: Why doesn't resource work as expected here?
   # Does Rails not know it's a model resource since the

@@ -1,6 +1,6 @@
-module Pages
+module StaticPages
   class AdminPagesController < Admin::AdminController
-    requires_plugin 'pages'
+    requires_plugin 'static-pages'
 
     def index
       render_json_dump(pages: Page.all)

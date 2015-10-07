@@ -1,10 +1,10 @@
-module Pages
+module StaticPages
   class Engine < ::Rails::Engine
-    isolate_namespace Pages
+    isolate_namespace StaticPages
 
     config.after_initialize do
       Discourse::Application.routes.append do
-        mount Pages::Engine, at: '/pages'
+        mount StaticPages::Engine, at: '/pages'
       end
     end
   end

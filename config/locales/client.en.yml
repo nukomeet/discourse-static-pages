@@ -1,7 +1,7 @@
 en:
   js:
-    pages:
-      title: 'Pages'
+    static_pages:
+      pages: 'Pages'
       refresh: 'Refresh'
       new: 'New'
       edit: 'Edit'
@@ -13,3 +13,5 @@ en:
       created: 'Created'
       updated: 'Updated'
       actions: 'Actions'
+      title: 'Title'
+      body: 'Body'

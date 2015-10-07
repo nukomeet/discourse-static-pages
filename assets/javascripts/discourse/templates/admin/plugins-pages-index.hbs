@@ -2,10 +2,10 @@
   <table>
     <thead>
       <tr>
-        <th>{{i18n 'pages.page'}}</th>
-        <th>{{i18n 'pages.created'}}</th>
-        <th>{{i18n 'pages.updated'}}</th>
-        <th>{{i18n 'pages.actions'}}</th>
+        <th>{{i18n 'static_pages.page'}}</th>
+        <th>{{i18n 'static_pages.created'}}</th>
+        <th>{{i18n 'static_pages.updated'}}</th>
+        <th>{{i18n 'static_pages.actions'}}</th>
       </tr>
     </thead>
     <tbody>
@@ -21,8 +21,8 @@
             {{page.updated_at}}
           </td>
           <td>
-            {{#link-to 'adminPlugins.pages.edit' page.id class="btn btn-primary"}}{{i18n 'pages.edit'}}{{/link-to}}
-            <button class="btn" {{action 'delete' page}}>{{i18n 'pages.delete'}}</button>
+            {{#link-to 'adminPlugins.pages.edit' page.id class="btn btn-primary"}}{{i18n 'static_pages.edit'}}{{/link-to}}
+            <button class="btn" {{action 'delete' page}}>{{i18n 'static_pages.delete'}}</button>
           </td>
         </tr>
       {{/each}}
@@ -31,6 +31,6 @@
 </div>
 
 <div class="row">
-  {{#link-to 'adminPlugins.pages.new' class="btn btn-primary"}}{{i18n 'pages.new'}}{{/link-to}}
-  <button class="btn" {{action 'refresh'}}>{{i18n 'pages.refresh'}}</button>
+  {{#link-to 'adminPlugins.pages.new' class="btn btn-primary"}}{{i18n 'static_pages.new'}}{{/link-to}}
+  <button class="btn" {{action 'refresh'}}>{{i18n 'static_pages.refresh'}}</button>
 </div>

@@ -1,4 +1,4 @@
 plugins:
-  pages_enabled:
+  static_pages_enabled:
     default: true
     client: true

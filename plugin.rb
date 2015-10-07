@@ -1,11 +1,11 @@
-# name: pages
+# name: static-pages
 # about: Static pages plugin for Discourse
 # version: 0.0.1
 # authors: Nukomeet
 
-enabled_site_setting :pages_enabled
+enabled_site_setting :static_pages_enabled
 
-add_admin_route 'pages.title', 'pages'
+add_admin_route 'static_pages.pages', 'pages'
 
 Discourse::Application.routes.append do
   get '/admin/plugins/pages' => 'admin/plugins#index', constraints: AdminConstraint.new

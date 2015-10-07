@@ -1,12 +1,12 @@
 <form>
   <div class="form-group">
-    <label class="control-label col-lg-2" for="inputTitle">Title</label>
+    <label class="control-label col-lg-2" for="inputTitle">{{i18n 'static_pages.title'}}</label>
     <div class="col-lg-10">
     {{input type="text" value=model.title id="inputTitle" classNames="form-control"}}
     </div>
   </div>
   <div class="form-group">
-    <label class="control-label col-lg-2" for="textareaBody">Body</label>
+    <label class="control-label col-lg-2" for="textareaBody">{{i18n 'static_pages.body'}}</label>
     <div class="col-lg-10">
     {{textarea value=model.body classNames="form-control" id="textareaBody"}}
     </div>

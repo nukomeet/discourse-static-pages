@@ -1,4 +1,4 @@
 require File.expand_path('../pages/engine', __FILE__)
 
-module Pages
+module StaticPages
 end

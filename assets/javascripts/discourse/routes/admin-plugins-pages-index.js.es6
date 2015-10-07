@@ -1,4 +1,4 @@
-import Page from 'discourse/plugins/pages/admin/models/page';
+import Page from '../../admin/models/page';
 
 export default Discourse.Route.extend({
   model() {
