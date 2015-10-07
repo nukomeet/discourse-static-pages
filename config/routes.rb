@@ -17,7 +17,13 @@ StaticPages::Engine.routes.draw do
     end
   end
 
-  resource :pages, path: '', only: [] do
+  class PagesEnabledConstraint
+    def matches?(request)
+      SiteSetting.static_pages_enabled
+    end
+  end
+
+  resource :pages, path: '', constraints: PagesEnabledConstraint.new, only: [] do
     member do
       get ':id' => 'pages#show'
     end

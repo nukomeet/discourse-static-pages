@@ -12,7 +12,3 @@ Follow the Discourse plugin [installation guide](https://meta.discourse.org/t/in
 cd plugins
 git clone https://github.com/nukomeet/discourse-static-pages.git
 ```
-
-## TODO
-
-* enable/disable frontend based on setting
