@@ -16,4 +16,10 @@ StaticPages::Engine.routes.draw do
       delete ':id' => 'admin_pages#destroy'
     end
   end
+
+  resource :pages, path: '', only: [] do
+    member do
+      get ':id' => 'pages#show'
+    end
+  end
 end

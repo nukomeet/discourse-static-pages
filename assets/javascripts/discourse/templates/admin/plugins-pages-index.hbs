@@ -21,6 +21,7 @@
             {{page.updated_at}}
           </td>
           <td>
+            {{#link-to 'pages.show' page.id class="btn"}}{{i18n 'static_pages.view'}}{{/link-to}}
             {{#link-to 'adminPlugins.pages.edit' page.id class="btn btn-primary"}}{{i18n 'static_pages.edit'}}{{/link-to}}
             <button class="btn" {{action 'delete' page}}>{{i18n 'static_pages.delete'}}</button>
           </td>
