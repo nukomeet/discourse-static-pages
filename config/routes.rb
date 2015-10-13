@@ -24,6 +24,10 @@ StaticPages::Engine.routes.draw do
   end
 
   resource :pages, path: '', constraints: PagesEnabledConstraint.new, only: [] do
+    collection do
+      get '' => 'pages#index'
+    end
+
     member do
       get ':id' => 'pages#show'
     end

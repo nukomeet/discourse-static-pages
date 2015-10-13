@@ -1,0 +1,5 @@
+{{#each staticPages as |page|}}
+  <li>
+    {{#link-to 'pages.show' page.id}}{{page.title}}{{/link-to}}
+  </li>
+{{/each}}
