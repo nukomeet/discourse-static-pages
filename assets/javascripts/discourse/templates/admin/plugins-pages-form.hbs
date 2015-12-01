@@ -11,7 +11,7 @@
     {{i18n 'static_pages.body'}}
   </label>
   <div class="col-lg-10">
-    {{pagedown-editor name="body" value=model.body required="true"}}
+    {{d-editor name="body" value=model.body required="true"}}
   </div>
 </div>
 <input type="hidden" name="id" {{bind-attr value=model.id}} id="id" />
